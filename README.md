@@ -1,8 +1,15 @@
-# React + Vite
+# Explorador de Portugal
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Explore a beleza de Portugal com este aplicativo React. Cada foto cativante abre uma nova rota, permitindo que você descubra a rica herança e as paisagens deslumbrantes deste país encantador.
 
-Currently, two official plugins are available:
+## Recursos
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Galeria de fotos envolvente que destaca diferentes aspectos de Portugal.
+- Clique em cada foto para acessar uma rota dedicada com detalhes adicionais.
+- Seções incluem marcos históricos, destaques culturais e paisagens pitorescas.
+
+## Como Começar
+
+1. **Clone o repositório:**
+ 
+   git clone https://github.com/seu-usuario/nome-do-repositorio.git
