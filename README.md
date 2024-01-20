@@ -12,4 +12,4 @@ Explore a beleza de Portugal com este aplicativo React. Cada foto cativante abre
 
 1. **Clone o repositório:**
  
-git@github.com:rodolphoreis/album-portugal.git
+https://github.com/rodolphoreis/album-portugal.git
