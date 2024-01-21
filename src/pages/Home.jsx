@@ -71,6 +71,7 @@ export default function Home() {
                     backgroundColor: "#1A76D2",
                     color: "white",
                     "&:hover": { backgroundColor: "#3b88d5" },
+                    fontSize: "13px",
                     marginTop: "17px",
                   }}
                 >
@@ -85,6 +86,7 @@ export default function Home() {
                     borderColor: "#1A76D2",
                     color: "#1A76D2",
                     marginLeft: "20px",
+                    fontSize: "13px",
                     "&:hover": { backgroundColor: "#edf2fb" },
                   }}
                 >

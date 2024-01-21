@@ -10,6 +10,9 @@ const Attractions = () => {
       imageWidth: 400,
       imageHeight: 200,
       imageAlt: attractionName,
+      showCancelButton: false,
+      confirmButtonColor: "#1A76D2",
+      confirmButtonText: "Fechar",
     });
   };
 
@@ -23,7 +26,7 @@ const Attractions = () => {
           fontFamily: "sans-serif",
         }}
       >
-        Uma Jornada pelos Destinos Imperdíveis
+        Uma jornada pelos destinos imperdíveis
       </h2>
       <div>
         <h3
