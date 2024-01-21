@@ -19,67 +19,6 @@ import { Link as RouterLink } from "react-router-dom";
 
 const defaultTheme = createTheme();
 
-const cards = [
-  {
-    id: 1,
-    title: "Aqui Nasceu Portugal",
-    description: "Fachada da antiga Torre",
-    image: "1-25-4.jpg",
-  },
-  {
-    id: 2,
-    title: "Castelo de Guimarães",
-    description: "Fundado por Mumadona Dias no século X.",
-    image: "101001356_111502007090852_2274924038053422451_n.jpg",
-  },
-  {
-    id: 3,
-    title: "Igreja de São Gualter",
-    description: "Igreja de São Gualter fica no Campo da Feira",
-    image: "guimaraes.png",
-  },
-  {
-    id: 4,
-    title: "Região viníca",
-    description: "Maior área de vinha em montanha do mundo.",
-    image: "vale-douro-portugal-5.jpeg",
-  },
-  {
-    id: 5,
-    title: "Douro",
-    description: "O rio Douro, um dos principais rios da Península Ibérica",
-    image: "vale-douro-portugal-o-que-fazer3-e1605812269646.jpeg",
-  },
-
-  {
-    id: 6,
-    title: "Pisa das Uvas",
-    description:
-      "Tradições antigas e enraizadas na cultura vitivinícola de Portugal",
-    image: "Harmonia-da-Vindima-Emerson-Ribeiro-3.jpg",
-  },
-  {
-    id: 7,
-    title: "Ribeira",
-    description:
-      "Um dos lugares mais importantes na hora de conhecer o centro histórico do Porto",
-    image: "porto.jpeg",
-  },
-  {
-    id: 8,
-    title: "Vila Nova de Gaia",
-    description:
-      "Conhecido internacionalmente pelas suas empresas de vinhos do Porto e do Douro",
-    image: "solPorto.jpeg",
-  },
-  {
-    id: 9,
-    title: "Bondes em Lisboa",
-    description: "melhor forma de se locomover por Lisboa",
-    image: "pexels-photo-2757691.jpeg",
-  },
-];
-
 export default function Home() {
   return (
     <ThemeProvider theme={defaultTheme}>
@@ -157,36 +96,313 @@ export default function Home() {
         </Box>
         <Container sx={{ py: 8 }} maxWidth="md">
           <Grid container spacing={4}>
-            {cards.map((card) => (
-              <Grid item key={card.id} xs={12} sm={6} md={4}>
-                <Card
+            {/* -------card 1--------- */}
+            <Grid item xs={12} sm={6} md={4}>
+              <Card
+                sx={{
+                  height: "100%",
+                  display: "flex",
+                  flexDirection: "column",
+                }}
+              >
+                <CardMedia
+                  component="div"
                   sx={{
-                    height: "100%",
-                    display: "flex",
-                    flexDirection: "column",
+                    pt: "75%",
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
                   }}
-                >
-                  <CardMedia
-                    component="div"
-                    sx={{
-                      pt: "75%",
-                      backgroundSize: "cover",
-                      backgroundPosition: "center",
-                    }}
-                    image={card.image}
-                  />
-                  <CardContent sx={{ flexGrow: 1 }}>
-                    <Typography gutterBottom variant="h6" component="h2">
-                      {card.title}
-                    </Typography>
-                    <Typography>{card.description}</Typography>
-                  </CardContent>
-                  <CardActions>
+                  image="1-25-4.jpg"
+                />
+                <CardContent sx={{ flexGrow: 1 }}>
+                  <Typography gutterBottom variant="h6" component="h2">
+                    Aqui Nasceu Portugal
+                  </Typography>
+                  <Typography>Fachada da antiga Torre</Typography>
+                </CardContent>
+                <CardActions>
+                  <RouterLink
+                    to={`/aquinasceuportugal`}
+                    style={{ width: "100%" }}
+                  >
                     <Button size="small">Visualizar</Button>
-                  </CardActions>
-                </Card>
-              </Grid>
-            ))}
+                  </RouterLink>
+                </CardActions>
+              </Card>
+            </Grid>
+            {/* -------card 2--------- */}
+            <Grid item xs={12} sm={6} md={4}>
+              <Card
+                sx={{
+                  height: "100%",
+                  display: "flex",
+                  flexDirection: "column",
+                }}
+              >
+                <CardMedia
+                  component="div"
+                  sx={{
+                    pt: "75%",
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
+                  }}
+                  image="101001356_111502007090852_2274924038053422451_n.jpg"
+                />
+                <CardContent sx={{ flexGrow: 1 }}>
+                  <Typography gutterBottom variant="h6" component="h2">
+                    Castelo de Guimarães
+                  </Typography>
+                  <Typography>
+                    Fundado por Mumadona Dias no século X.
+                  </Typography>
+                </CardContent>
+                <CardActions>
+                  <RouterLink
+                    to={`/castelodeguimaraes`}
+                    style={{ width: "100%" }}
+                  >
+                    <Button size="small">Visualizar</Button>
+                  </RouterLink>
+                </CardActions>
+              </Card>
+            </Grid>
+            {/* -------card 3-------- */}
+            <Grid item xs={12} sm={6} md={4}>
+              <Card
+                sx={{
+                  height: "100%",
+                  display: "flex",
+                  flexDirection: "column",
+                }}
+              >
+                <CardMedia
+                  component="div"
+                  sx={{
+                    pt: "75%",
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
+                  }}
+                  image="guimaraes.png"
+                />
+                <CardContent sx={{ flexGrow: 1 }}>
+                  <Typography gutterBottom variant="h6" component="h2">
+                    Igreja de São Gualter
+                  </Typography>
+                  <Typography>
+                    Igreja de São Gualter fica no Campo da Feira
+                  </Typography>
+                </CardContent>
+                <CardActions>
+                  <RouterLink
+                    to={`/igrejadesaogualter`}
+                    style={{ width: "100%" }}
+                  >
+                    <Button size="small">Visualizar</Button>
+                  </RouterLink>
+                </CardActions>
+              </Card>
+            </Grid>
+            {/* -------card 4--------- */}
+            <Grid item xs={12} sm={6} md={4}>
+              <Card
+                sx={{
+                  height: "100%",
+                  display: "flex",
+                  flexDirection: "column",
+                }}
+              >
+                <CardMedia
+                  component="div"
+                  sx={{
+                    pt: "75%",
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
+                  }}
+                  image="vale-douro-portugal-5.jpeg"
+                />
+                <CardContent sx={{ flexGrow: 1 }}>
+                  <Typography gutterBottom variant="h6" component="h2">
+                    Região viníca
+                  </Typography>
+                  <Typography>
+                    Maior área de vinha em montanha do mundo.
+                  </Typography>
+                </CardContent>
+                <CardActions>
+                  <RouterLink to={`/regiaovinica`} style={{ width: "100%" }}>
+                    <Button size="small">Visualizar</Button>
+                  </RouterLink>
+                </CardActions>
+              </Card>
+            </Grid>
+            {/* -------card 5--------- */}
+            <Grid item xs={12} sm={6} md={4}>
+              <Card
+                sx={{
+                  height: "100%",
+                  display: "flex",
+                  flexDirection: "column",
+                }}
+              >
+                <CardMedia
+                  component="div"
+                  sx={{
+                    pt: "75%",
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
+                  }}
+                  image="vale-douro-portugal-o-que-fazer3-e1605812269646.jpeg"
+                />
+                <CardContent sx={{ flexGrow: 1 }}>
+                  <Typography gutterBottom variant="h6" component="h2">
+                    Douro
+                  </Typography>
+                  <Typography>
+                    O rio Douro, um dos principais rios da Península Ibérica
+                  </Typography>
+                </CardContent>
+                <CardActions>
+                  <RouterLink to={`/douro`} style={{ width: "100%" }}>
+                    <Button size="small">Visualizar</Button>
+                  </RouterLink>
+                </CardActions>
+              </Card>
+            </Grid>
+            {/* -------card 6--------- */}
+            <Grid item xs={12} sm={6} md={4}>
+              <Card
+                sx={{
+                  height: "100%",
+                  display: "flex",
+                  flexDirection: "column",
+                }}
+              >
+                <CardMedia
+                  component="div"
+                  sx={{
+                    pt: "75%",
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
+                  }}
+                  image="Harmonia-da-Vindima-Emerson-Ribeiro-3.jpg"
+                />
+                <CardContent sx={{ flexGrow: 1 }}>
+                  <Typography gutterBottom variant="h6" component="h2">
+                    Pisa das Uvas
+                  </Typography>
+                  <Typography>
+                    Tradições antigas e enraizadas na cultura vitivinícola de
+                    Portugal
+                  </Typography>
+                </CardContent>
+                <CardActions>
+                  <RouterLink to={`/pisadasuvas`} style={{ width: "100%" }}>
+                    <Button size="small">Visualizar</Button>
+                  </RouterLink>
+                </CardActions>
+              </Card>
+            </Grid>
+            {/* -------card 7--------- */}
+            <Grid item xs={12} sm={6} md={4}>
+              <Card
+                sx={{
+                  height: "100%",
+                  display: "flex",
+                  flexDirection: "column",
+                }}
+              >
+                <CardMedia
+                  component="div"
+                  sx={{
+                    pt: "75%",
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
+                  }}
+                  image="porto.jpeg"
+                />
+                <CardContent sx={{ flexGrow: 1 }}>
+                  <Typography gutterBottom variant="h6" component="h2">
+                    Ribeira
+                  </Typography>
+                  <Typography>
+                    Um dos lugares mais importantes na hora de conhecer o centro
+                    histórico do Porto
+                  </Typography>
+                </CardContent>
+                <CardActions>
+                  <RouterLink to={`/ribeira`} style={{ width: "100%" }}>
+                    <Button size="small">Visualizar</Button>
+                  </RouterLink>
+                </CardActions>
+              </Card>
+            </Grid>
+            {/* -------card 8--------- */}
+            <Grid item xs={12} sm={6} md={4}>
+              <Card
+                sx={{
+                  height: "100%",
+                  display: "flex",
+                  flexDirection: "column",
+                }}
+              >
+                <CardMedia
+                  component="div"
+                  sx={{
+                    pt: "75%",
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
+                  }}
+                  image="solPorto.jpeg"
+                />
+                <CardContent sx={{ flexGrow: 1 }}>
+                  <Typography gutterBottom variant="h6" component="h2">
+                    Vila Nova de Gaia
+                  </Typography>
+                  <Typography>
+                    Conhecido internacionalmente pelas suas empresas de vinhos
+                    do Porto e do Douro
+                  </Typography>
+                </CardContent>
+                <CardActions>
+                  <RouterLink to={`/vilanovadegaia`} style={{ width: "100%" }}>
+                    <Button size="small">Visualizar</Button>
+                  </RouterLink>
+                </CardActions>
+              </Card>
+            </Grid>
+            {/* -------card 9--------- */}
+            <Grid item xs={12} sm={6} md={4}>
+              <Card
+                sx={{
+                  height: "100%",
+                  display: "flex",
+                  flexDirection: "column",
+                }}
+              >
+                <CardMedia
+                  component="div"
+                  sx={{
+                    pt: "75%",
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
+                  }}
+                  image="pexels-photo-2757691.jpeg"
+                />
+                <CardContent sx={{ flexGrow: 1 }}>
+                  <Typography gutterBottom variant="h6" component="h2">
+                    Bondes em Lisboa
+                  </Typography>
+                  <Typography>
+                    Melhor forma de se locomover por Lisboa
+                  </Typography>
+                </CardContent>
+                <CardActions>
+                  <RouterLink to={`/bondesdelisboa`} style={{ width: "100%" }}>
+                    <Button size="small">Visualizar</Button>
+                  </RouterLink>
+                </CardActions>
+              </Card>
+            </Grid>
           </Grid>
         </Container>
       </main>

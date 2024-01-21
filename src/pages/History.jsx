@@ -9,13 +9,15 @@ const History = () => {
           pb: 6,
           bgcolor: "background.paper",
           textAlign: "center",
-          mt: 5,
+          mt: -9,
         }}
       >
         <Typography variant="h4" gutterBottom>
           História de Portugal
         </Typography>
-        <Typography sx={{ textAlign: "left" }}>
+        <Typography
+          sx={{ textAlign: "left", marginBottom: "55px", marginTop: "35px" }}
+        >
           Portugal foi fundado em 1143, ano da celebração do Tratado de Zamora.
           O Tratado, assinado entre D. Afonso Henriques, primeiro rei de
           Portugal, e Afonso VII de Leão e Castela, reconhece o estatuto
