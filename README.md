@@ -30,6 +30,4 @@ Certifique-se de ter [Node.js](https://nodejs.org/) instalado.
    git clone https://github.com/rodolphoreis/album-portugal.git
 
 
-1. **Clone o repositório:**
- 
-https://github.com/rodolphoreis/album-portugal.git
+
